@@ -33,8 +33,8 @@
                 <mxCell id="9" value="webpack" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="-130" y="260" width="60" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="12" value="typescript, babel" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="-330" y="260" width="120" height="60" as="geometry"/>
+                <mxCell id="12" value="typescript编译(babel)" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="-335" y="260" width="120" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="19" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="13" target="15" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
@@ -197,6 +197,9 @@
                 </mxCell>
                 <mxCell id="73" value="响应式" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
                     <mxGeometry x="-310" y="740" width="70" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="75" value="ts类型检查 tsc" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="-335" y="340" width="120" height="60" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
