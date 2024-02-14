@@ -6,6 +6,8 @@
 
 @layer base {
   :root {
+    --menu-hover: 210 40% 80%;
+    --menu-active: 210 40% 70%;
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
     --card: 0 0% 100%;

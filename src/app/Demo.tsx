@@ -115,7 +115,7 @@ export const Demo = () => {
       <DatePicker />
 
       <Button
-        variant="outline"
+        // variant="outline"
         onClick={() => {
           toast({
             title: 'Scheduled: Catch up ',
