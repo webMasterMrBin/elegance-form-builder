@@ -1,8 +1,11 @@
 import React, { FC } from 'react';
+import { FeatureTabs } from 'src/widgets';
 
 const Forms: FC = () => {
   return (
-    <div>forms</div>
+    <div className="flex-auto">
+      <FeatureTabs />
+    </div>
   )
 }
 

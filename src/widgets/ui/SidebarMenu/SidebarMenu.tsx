@@ -1,11 +1,13 @@
-import React, { FC, useState } from 'react';
+import React, { FC, useState, useReducer } from 'react';
 import cn from 'classnames';
+import { ChevronLeftCircle, ChevronRightCircle } from 'lucide-react';
 import { MENUS } from './constant';
 import { useLocation, useNavigate } from 'react-router-dom';
 
 const SidebarMenu: FC = () => {
   const { pathname = MENUS[0].route } = useLocation();
   const [menuKey, setMenuKey] = useState(pathname);
+  const [isCollapse, toggleIsCollapse] = useReducer(state => !state, false);
   const navigate = useNavigate();
 
   const onClick = (route: string) => {
@@ -14,7 +16,15 @@ const SidebarMenu: FC = () => {
   };
 
   return (
-    <div className="w-[80px] sm:w-[150px] bg-primary">
+    <div className={cn('w-[80px] bg-primary transition-all', !isCollapse && 'sm:w-[150px]')}>
+      <div className="justify-end pr-[10px] my-[10px] hidden sm:flex">
+        {!isCollapse ? (
+          <ChevronLeftCircle onClick={toggleIsCollapse} className="text-primary-foreground cursor-pointer" size={20} />
+        ) : (
+          <ChevronRightCircle onClick={toggleIsCollapse} className="text-primary-foreground cursor-pointer" size={20} />
+        )}
+      </div>
+
       {MENUS.map(({ name, icon, route }) => (
         <div
           key={route}
