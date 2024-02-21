@@ -4,6 +4,7 @@ import { ChevronLeftCircle, ChevronRightCircle } from 'lucide-react';
 import { MENUS } from './constant';
 import { useLocation, useNavigate } from 'react-router-dom';
 
+/** 侧边栏菜单 */
 const SidebarMenu: FC = () => {
   const { pathname = MENUS[0].route } = useLocation();
   const [menuKey, setMenuKey] = useState(pathname);

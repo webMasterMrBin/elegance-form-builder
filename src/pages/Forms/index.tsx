@@ -1,10 +1,13 @@
 import React, { FC } from 'react';
-import { FeatureTabs } from 'src/widgets';
+import { FeatureTabs, DragComponents } from 'src/widgets';
 
 const Forms: FC = () => {
   return (
-    <div className="flex-auto">
+    <div className="flex-auto flex flex-col">
       <FeatureTabs />
+      <div className="flex-grow">
+        <DragComponents />
+      </div>
     </div>
   )
 }
